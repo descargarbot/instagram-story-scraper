@@ -22,7 +22,8 @@
 </ul>
 <h2>use case example</h2>
 
-    # use case example
+    #import the class InstagramStoryScraper
+    from instagram_stories_scraper import InstagramStoryScraper
 
     # set your ig username and password
     your_username = 'your ig username'
