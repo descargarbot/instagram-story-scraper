@@ -61,8 +61,12 @@
     ig_story.download(stories_urls)
 
     ig_story.ig_session.close()
-    
-<br>
+
+  or you can use the CLI
+  <br><br>
+  <code>python3 instagram_stories_scraper.py --username your_username --password your_password IG_URL</code>
+<br><br>
+
 <h2>warning</h2>
 <ul>
   <li>Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.</li>
