@@ -222,15 +222,26 @@ if __name__ == "__main__":
 
     # use case example
 
-    # set your ig username and password
-    your_username = 'your ig username'
-    your_password = 'your ig password'
-
-    cookies_path = 'ig_cookies'
+    # set your ig username and password,
+    # if your ig_cookies file already exist, username and password will be ignored
+    # if you want perform a new login, delete ig_cookies file
+    your_username = ''
+    your_password = ''
 
     # set ig stories url (this only works for stories and highlights)
     # for post, reels, igtv see InstagramPostScraper class
-    ig_story_url = 'your ig story/highlight url'
+    ig_story_url = ''
+
+    if your_username == '' and your_password == '' and ig_story_url == '':
+        args = sys.argv[1:]
+        if '--username' != args[0] or '--password' != args[2]:
+            print("error. try:\npython3 instagram_stories_scraper.py --username your_username --password your_password IG_URL")
+            exit()
+        your_username = args[1]
+        your_password = args[3]
+        ig_story_url = args[4]
+    
+    cookies_path = 'ig_cookies'
  
     # create scraper stories object    
     ig_story = InstagramStoryScraper()
