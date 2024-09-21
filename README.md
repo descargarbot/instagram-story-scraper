@@ -67,8 +67,8 @@
   <code>python3 instagram_stories_scraper.py --username your_username --password your_password IG_URL</code>
 <br><br>
 
-> [!WARNING]\
->  - Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.
+>[!WARNING]\
+>- Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.
 
  <br>
 <h2>online</h2>
