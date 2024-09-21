@@ -67,12 +67,12 @@
   <code>python3 instagram_stories_scraper.py --username your_username --password your_password IG_URL</code>
 <br><br>
 
-<h2>warning</h2>
-<ul>
-  <li>Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.</li>
-  <li>when running this scraper from a datacenter (even smaller ones), chances are large you will not pass. Also, if your ip reputation at home is low, you won't pass</li>
-<br>
-</ul>
+> [!WARNING]\
+> <ul>
+>  <li>Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.</li>
+>  <li>when running this scraper from a datacenter (even smaller ones), chances are large you will not pass. Also, if your ip reputation at home is low, you won't pass</li>
+> <br>
+> </ul>
 <h2>online</h2>
 <ul>
   ⤵
