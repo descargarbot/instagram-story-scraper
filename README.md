@@ -63,7 +63,7 @@
     ig_story.ig_session.close()
 
   > [!NOTE]\
-  > or you can use the CLI
+  > you can use the CLI
   <br><br>
   ><code>python3 instagram_stories_scraper.py --username your_username --password your_password IG_URL</code>
 <br>
