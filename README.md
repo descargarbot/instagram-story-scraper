@@ -68,7 +68,7 @@
 <br><br>
 
 >[!WARNING]\
->- Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.
+>Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.
 
  <br>
 <h2>online</h2>
