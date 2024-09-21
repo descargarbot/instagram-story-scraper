@@ -69,7 +69,7 @@
 
 > [!WARNING]\
 >  - Accounts used with the scraper are quite susceptible to suspension. <b>Do not use your personal account</b>.
->  - when running this scraper from a datacenter (even smaller ones), chances are large you will not pass. Also, if your ip reputation at home is low, you won't pass
+
  <br>
 <h2>online</h2>
 <ul>
