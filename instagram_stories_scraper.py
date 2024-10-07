@@ -201,7 +201,7 @@ class InstagramStoryScraper:
         return downloaded_item_list
 
 
-    def get_story_filesize(self, video_url_list: list) -> str:
+    def get_story_filesize(self, video_url_list: list) -> list:
         """ get file size of requested video """
 
         items_filesize = []
