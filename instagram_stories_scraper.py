@@ -42,7 +42,7 @@ class InstagramStoryScraper:
         self.proxies['https'] = https_proxy
 
 
-    def get_username_storyid(self, ig_story_url: str):
+    def get_username_storyid(self, ig_story_url: str) -> tuple:
         """ username can be 'highlights', if 'highlights' is the username, 
             story_id will be used """
 
@@ -52,7 +52,7 @@ class InstagramStoryScraper:
             # base64 decoding of <code>
             code = re.match(self.ig_highlights_regex, ig_story_url).group(1)
             
-            return {'username':'highlights', 'story_id':str(base64.b64decode(code)).split(':')[1][:-1]} 
+            return 'highlights', str(base64.b64decode(code)).split(':')[1][:-1]
 
         match = re.match(self.ig_story_regex, ig_story_url)
         if match:
