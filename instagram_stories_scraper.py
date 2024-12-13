@@ -30,7 +30,7 @@ class InstagramStoryScraper:
 
         self.ig_story_regex = r'https?://(?:www\.)?instagram\.com/stories/([^/]+)(?:/(\d+))?/?'
 
-        self.ig_highlights_regex = r'(?:https?://)?(?:www\.)?instagram\.com/s/(\w+)\?story_media_id=(\d+)_(\d+)'
+        self.ig_highlights_regex = r'(?:https?://)?(?:www\.)?instagram\.com/s/(\w+)(?:\?story_media_id=(\d+)_(\d+))?'
 
         self.ig_session = requests.Session()
 
