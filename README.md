@@ -9,63 +9,21 @@
 
 <h2>dependencies</h2>
 <code>Python 3.9+</code>
-<code>requests</code>
+<code>curl_cffi</code>
 <br>
 <br>
 <h2>install dependencies</h2>
 <ul>
-<li><h3>requests</h3></li>
-  <code>pip install requests</code><br>
-  <code>pip install -U 'requests[socks]'</code>
+<li><h3>curl_cffi</h3></li>
+  <code>pip install curl_cffi</code><br>
   <br>
 <br>
 </ul>
-<h2>use case example</h2>
-
-    #import the class InstagramStoryScraper
-    from instagram_stories_scraper import InstagramStoryScraper
-
-    # set your ig username and password
-    your_username = 'your ig username'
-    your_password = 'your ig password'
-
-    cookies_path = 'ig_cookies'
-
-    # set ig stories url (this only works for stories and highlights)
-    # for post, reels, igtv see InstagramPostScraper class
-    ig_story_url = 'your ig story/highlight url'
- 
-    # create scraper stories object    
-    ig_story = InstagramStoryScraper()
-
-    # set the proxy (optional, u can run it with ur own ip),
-    ig_story.set_proxies('', '')
-
-    # get the username and story id by url
-    username, story_id = ig_story.get_username_storyid(ig_story_url)
-
-    # get the user id or highlights id
-    user_id = ig_story.get_userid_by_username(username, story_id)
-
-    # perform login or load cookies
-    ig_story.ig_login(your_username, your_password, cookies_path)
-
-    # get the stories urls (sequential with get_story_filesize)
-    stories_urls, thumbnail_urls = ig_story.get_ig_stories_urls(user_id)
-
-    # get the video filesize (sequential with get_ig_stories_urls)
-    #storysize = ig_story.get_story_filesize(stories_urls)
-    #[print('filesize: ~' + filesize + ' bytes') for filesize in storysize]
-
-    # download the stories
-    ig_story.download(stories_urls)
-
-    ig_story.ig_session.close()
 
   > [!NOTE]\
   > you can use the CLI
   <br><br>
-  ><code>python3 instagram_stories_scraper.py --username your_username --password your_password IG_URL</code>
+  ><code>python3 instagram_stories_scraper.py "IG_STORY_HIGHLIGHTS_URL" ig_cookies.txt</code>
 <br>
 
 >[!WARNING]\
